@@ -19,7 +19,7 @@ if (isset($vars['entity'])) {
 		$full = (isset($vars['full']) && $vars['full'] == true && $vars['entity'] instanceof ElggEntity);
 ?>
 
-		<div class="contentWrapper singleview <?php echo $containerEntity->getType() != "group" ? 'user_question' : "group_question";?> ">
+		<div class="contentWrapper singleview <?php echo $containerEntity->getType().'_question';?> ">
 
 			<div class="topic_post">
 				<table width="100%">
